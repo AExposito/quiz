@@ -19,3 +19,12 @@ footer,
 input{
   font-size: large;
 }
+
+#miFoto{
+  height: 4em;
+}
+
+#video{
+  height: 4em;
+  margin: 0.2em;
+}

@@ -26,3 +26,12 @@ footer{
   clear: both;
   display: block;
 }
+
+#miFoto{
+  height: 4em;
+}
+
+#video{
+  height: 4em;
+  margin: 0.2em;
+}
