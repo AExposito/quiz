@@ -18,9 +18,12 @@ exports.load = function(req, res, next, quizId) {
 // GET /quizes
 exports.index = function(req, res) {
   var textoABuscar = "";
-  var aux = req.query.search.split(" ");
-  for(i in aux){
-    textoABuscar = textoABuscar + "%" + aux[i];
+  var aux;
+  if(req.query.search !== undefined){
+    aux = req.query.search.split(" ");
+    for(i in aux){
+      textoABuscar = textoABuscar + "%" + aux[i];
+    }
   }
   models.Quiz.findAll({where: ["pregunta like ?", textoABuscar+"%"]}).then(
     function(quizes) {
