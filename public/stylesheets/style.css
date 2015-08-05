@@ -52,3 +52,7 @@ nav span{
   height: 5em;
   margin: 0.2em;
 }
+
+.right{
+  float: right;
+}
